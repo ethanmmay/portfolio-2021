@@ -49,13 +49,26 @@ a:visited {
     padding-left: 10px;
 }
 
-.body {
-    top: 200px;
-    right: 35%;
-    width: 600px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    padding-left: 5px;
-    padding-right: 5px;
-    position: absolute;
+.img-area-1 {
+    margin: 2em;
+    margin-top: 8em;
+}
+
+.img-area-1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img-area-1 .caption {
+    float: left;
+    font-size: 14pt;
+}
+
+.img-area-1 .image {
+    float: right;
+}
+
+.extender {
+    margin-top: 200em;
 }
