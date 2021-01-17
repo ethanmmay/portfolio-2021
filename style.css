@@ -1,15 +1,23 @@
-body {
-    background-color: #353535;
-    color: #f3f3f3;
+:root {
+    --font1: 'Fjalla One', sans-serif;
+    --font2: 'Cinzel', serif;
+    --bg-color: #353535;
+    --bg-color-2: #2b2b2b;
+    --light: #f3f3f3;
+    --dark: #202020;
+}
 
+body {
+    background-color: var(--bg-color);
+    color: var(--light);
 }
 
 .gfont-1 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--font1);
 }
 
 .gfont-2 {
-    font-family: 'Cinzel', serif;
+    font-family: var(--font2);
 }
 
 a:visited {
@@ -26,23 +34,23 @@ a:visited {
     margin: 0px;
     top: 0;
     left: 0;
-    background-color: #2b2b2b;
-    border-bottom: 2px dashed #202020;
+    background-color: var(--bg-color-2);
+    border-bottom: 2px dashed var(--dark);
 }
 
 .nav-img {
     float: right;
     height: 30px;
     padding: 3px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid var(--bg-color-2);
 }
 
 .nav-img:hover {
-    border: 1px solid #f3f3f3;
+    border: 1px solid var(--light);
 }
 
 .title {
-    font-family: 'Cinzel', serif;
+    font-family: var(--font2);
     width: auto;
     position: absolute;
     padding: 6px;
@@ -66,8 +74,8 @@ a:visited {
 .img-area-1 .caption {
     float: left;
     font-size: 14pt;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
     padding: 10px;
     margin-right: 3em;
 }
@@ -75,7 +83,7 @@ a:visited {
 .img-area-1 .image {
     float: right;
     border-radius: 25%;
-    box-shadow: 3px 2px 6px black;
+    box-shadow: 3px 2px 6px var(--dark);
     max-width: 100%;
     min-width: 150px;
     height: auto;
