@@ -35,7 +35,7 @@ a:visited {
     top: 0;
     left: 0;
     background-color: var(--bg-color-2);
-    border-bottom: 2px dashed var(--dark);
+    border-bottom: 1px solid var(--dark);
 }
 
 .nav-img {
@@ -73,8 +73,8 @@ a:visited {
 
 .caption {
     font-size: 14pt;
-    border-left: 1px solid var(--light);
-    border-right: 1px solid var(--light);
+    border-left: 1px dotted var(--light);
+    border-right: 1px dotted var(--light);
     padding: 10px;
 }
 
