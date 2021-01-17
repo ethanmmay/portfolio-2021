@@ -66,10 +66,23 @@ a:visited {
 .img-area-1 .caption {
     float: left;
     font-size: 14pt;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+    margin-right: 3em;
 }
 
 .img-area-1 .image {
     float: right;
+    border-radius: 25%;
+    box-shadow: 3px 2px 6px black;
+    max-width: 100%;
+    min-width: 150px;
+    height: auto;
+}
+
+.img-area-1 .image-container {
+    max-width: 300px;
 }
 
 .extender {
