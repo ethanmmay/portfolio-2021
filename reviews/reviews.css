@@ -5,6 +5,7 @@
     --bg-color-2: #2b2b2b;
     --light: #f3f3f3;
     --dark: #202020;
+    --gray: #888888;
 }
 
 body {
@@ -67,8 +68,16 @@ a:visited {
     padding-left: 10px;
 }
 
+.fa-star {
+    color: var(--gray);
+}
+
+.fa-star.checked {
+    color: yellow;
+}
+
 .reviewer {
-    border: 2px solid darkgray;
+    border: 2px solid var(--gray);
     border-radius: 6px;
     margin-top: 1em;
     padding: 0.5em;
@@ -95,7 +104,7 @@ a:visited {
     color: var(--light);
     font-family: var(--font1);
     box-sizing: border-box;
-    border: 2px solid darkgray;
+    border: 2px solid var(--gray);
     border-radius: 6px;
     background-color: var(--bg-color-2);
     resize: none;
